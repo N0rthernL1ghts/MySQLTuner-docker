@@ -12,4 +12,4 @@ RUN apk add --update --no-cache perl perl-doc mariadb-client \
     && wget "${DL_VULNERABILITIES_LIST}" -O ./vulnerabilities.csv
 
 USER mysqltunner
-CMD ["perl", "/mysqltuner.pl", "--cvefile=./vulnerabilities.csv", "--passwordfile=./basic_passwords.txt"]
+ENTRYPOINT ["perl", "/mysqltuner.pl", "--cvefile=./vulnerabilities.csv", "--passwordfile=./basic_passwords.txt"]
