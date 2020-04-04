@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+LABEL maintainer="Aleksandar Puharic xzero@elite7haers.net"
+
 ENV DL_BASIC_PASSWORDS_LIST "https://raw.githubusercontent.com/major/MySQLTuner-perl/master/basic_passwords.txt"
 ENV DL_VULNERABILITIES_LIST "https://raw.githubusercontent.com/major/MySQLTuner-perl/master/vulnerabilities.csv"
 
